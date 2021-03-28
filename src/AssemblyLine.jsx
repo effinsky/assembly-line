@@ -30,6 +30,7 @@ function AssemblyLine({ stages }) {
   // if we got some stages to work with
   return (
     <>
+      <h1 className="title">Assembly Line</h1>
       {/* add item form */}
       <form onSubmit={handleAddItem}>
         <label htmlFor="addItem" className="item-label">

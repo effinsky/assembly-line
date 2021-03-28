@@ -1,16 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 :root {
   zoom: 1.2;
 }
 
-body {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
-    sans-serif;
-  font-size: 2rem;
+* {
+  font-family: "consolas", "Poppins", -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen, Ubuntu, sans-serif;
+    margin: 1rem;
 }
 
-#app {
-  margin: 2em;
+body {
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 1.2rem;
 }
 
 .div-line {
@@ -29,18 +36,20 @@ body {
   display: flex;
   width: 90vw;
   text-transform: capitalize;
-  width:max-content;
+  width: min-content;
+  word-wrap: normal;
 }
-
 
 .assembly-item-container {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
 .assembly-stage {
   padding: 15px;
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 .assembly-item {
@@ -49,8 +58,10 @@ body {
   color: black;
   box-shadow: 1.5px 1.5px 1px #333;
   margin-top: 5px;
-  text-transform: none;
   max-width: fit-content;
+  text-transform: none;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 .assembly-item:hover {
