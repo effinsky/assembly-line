@@ -1,0 +1,58 @@
+:root {
+  zoom: 1.2;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    sans-serif;
+  font-size: 2rem;
+}
+
+#app {
+  margin: 2em;
+}
+
+.div-line {
+  border-top: 2px solid #ccc;
+}
+
+.assembly-add-item {
+  margin-left: 10px;
+}
+
+.assembly-add-item:focus {
+  border: 1px solid blue;
+}
+
+.stage-container {
+  display: flex;
+  width: 90vw;
+  text-transform: capitalize;
+  width:max-content;
+}
+
+
+.assembly-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.assembly-stage {
+  padding: 15px;
+  font-weight: 600;
+}
+
+.assembly-item {
+  border-radius: 5px;
+  border: 2px solid black;
+  color: black;
+  box-shadow: 1.5px 1.5px 1px #333;
+  margin-top: 5px;
+  text-transform: none;
+  max-width: fit-content;
+}
+
+.assembly-item:hover {
+  background-color: rgb(221, 221, 66);
+}
