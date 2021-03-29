@@ -21,12 +21,10 @@ function AssemblyLine({ stages }) {
     setItems([{ stage: stages[0], value: inputValue }, ...items])
     setInputValue("")
   }
-
   // in case the stage array is empty
   if (stages.length === 0) {
     return <h1>No stages to display</h1>
   }
-
   // if we got some stages to work with
   return (
     <>
@@ -44,10 +42,7 @@ function AssemblyLine({ stages }) {
           onChange={handleInputValueChange}
         />
       </form>
-
-      {/* dividing line */}
       <hr className="div-line" />
-
       {/* stages and items */}
       <section className="stage-container">
         {stages.map((stage, i) => {
