@@ -32,3 +32,23 @@ The component must render a number of elements for the testing suite to use, all
 - A series of `<div class="assembly-stage"></div>` children should be provided, each representing the corresponding n-th stage in the assembly line as defined by props.stages. The number of stages will be equal to the length of props.stages provided to the component and will be fixed throughout one mount cycle. props.stages[0] is the name of the first stage and is the entry point for any items newly reated by .add-item, while props.stages[props.stages.length-1] is the name of the last stage. You may assume that props.stages will never be given as an empty array (but if you have time to write a validation for it, that's a bonus!). The testing suite will not check that these stage name strings were rendered, but it's recommended to do so to help identify stages as you work.
 
 - A series of `<button class="assembly-item"></button>` elements, which represent the items residing in a particular .stage element. The text content of an .assembly-item will be a string from a previous .add-item submission. As described above, this button accepts left- and right-click (context menu) events, which move it forwards or backwards, respectively, through the stages of the assembly line. As with stages, the n-th .assembly-item child of a list should correspond to the n-th item in that list conceptually.
+
+---
+
+## Demo
+Here's a screen capture illustrating the functionality of the component. Note the difference between left-clicking (moving an item to the next list) and right-clicking an item (moving an item to the previous list), as well as the location items move to when moving (previous moves append, while next moves prepend).
+
+This particular instance of the component was created with:
+
+`<AssemblyLine 
+  stages={[
+    "Idea", 
+    "Development", 
+    "Testing", 
+    "Deployment"
+  ]} 
+/>`
+
+---
+
+![Assembly Line demo](./assets/aldemo.gif)
